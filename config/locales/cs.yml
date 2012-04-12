@@ -1,0 +1,27 @@
+cs:
+  refinery:
+    plugins:
+      smart_pages:
+        title: Smart Pages
+    smart_pages:
+      admin:
+        smart_pages:
+          actions:
+            create_new: Přidat Smart Page
+            reorder: Řadit Smart Pages
+            reorder_done: Konec řazení Smart Pages
+          records:
+            title: Smart Pages
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Smart Pages. Zvolte "Přidat Smart Page" pro přidání prvního smart page.
+          smart_page:
+            view_live_html: Zobrazit náhled smart page<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit smart page
+            delete: Smazat smart page
+      smart_pages:
+        show:
+          other: Další Smart Pages
+  activerecord:
+    attributes:
+      'refinery/smart_pages/smart_page':
+        name: Name

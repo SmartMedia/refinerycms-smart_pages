@@ -1,0 +1,27 @@
+nl:
+  refinery:
+    plugins:
+      smart_pages:
+        title: Smart Pages
+    smart_pages:
+      admin:
+        smart_pages:
+          actions:
+            create_new: Nieuwe Smart Page toevoegen
+            reorder: De volgorde van de Smart Pages wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Smart Page-volgorde
+          records:
+            title: Smart Pages
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Smart Pages. Druk op 'Nieuwe Smart Page toevoegen' om de eerste toe te voegen.
+          smart_page:
+            view_live_html: Deze smart page op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze smart page
+            delete: Deze smart page definitief verwijderen
+      smart_pages:
+        show:
+          other: Andere Smart Pages
+  activerecord:
+    attributes:
+      'refinery/smart_pages/smart_page':
+        name: Name
