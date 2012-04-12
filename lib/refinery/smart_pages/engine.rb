@@ -38,7 +38,12 @@ module Refinery
               end
             end
           end
+        end
 
+        Refinery::PagePart.class_eval do
+          def to_i18n_key
+            title.downcase.gsub(/\W/, '_')
+          end
         end
       end
     end

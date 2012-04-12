@@ -10,3 +10,8 @@ en:
         templates:
           standard: standard
           two_columns: two columns
+        parts:
+          body: Body
+          side_body: Side body
+          left: Left column
+          right: Right column

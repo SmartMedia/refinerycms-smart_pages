@@ -10,3 +10,8 @@ cs:
         templates:
           standard: standartní
           two_columns: dvousloupcová
+        parts:
+          body: Obsah
+          side_body: Postranní obsah
+          left: Levý sloupec
+          right: Pravý sloupec
