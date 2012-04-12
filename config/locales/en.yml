@@ -5,23 +5,8 @@ en:
         title: Smart Pages
     smart_pages:
       admin:
-        smart_pages:
-          actions:
-            create_new: Add New Smart Page
-            reorder: Reorder Smart Pages
-            reorder_done: Done Reordering Smart Pages
-          records:
-            title: Smart Pages
-            sorry_no_results: Sorry! There are no results found.
-            no_items_yet: There are no Smart Pages yet. Click "Add New Smart Page" to add your first smart page.
-          smart_page:
-            view_live_html: View this smart page live <br/><em>(opens in a new window)</em>
-            edit: Edit this smart page
-            delete: Remove this smart page forever
-      smart_pages:
-        show:
-          other: Other Smart Pages
-  activerecord:
-    attributes:
-      'refinery/smart_pages/smart_page':
-        name: Name
+        choose_template: choose template
+        template: template
+        templates:
+          standard: standard
+          two_columns: two columns

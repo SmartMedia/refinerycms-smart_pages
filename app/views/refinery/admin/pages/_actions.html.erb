@@ -3,11 +3,22 @@
     <%= render '/refinery/admin/search', :url => refinery.admin_pages_path %>
   </li>
 
-  <% Refinery::Pages.types.each do |type| %>
+  <ul id='current_locale'>
     <li>
-      <%= link_to t('.create_new_page') + " (#{type.name.to_s})", refinery.new_admin_page_path + "?view_template=" + type.name.to_s, :class => "add_icon" %>
+      <%= link_to "#", :class => 'add_icon' do %>
+        <%= t('.create_new_page') %>
+        <span><%= t('choose_template', :scope => 'refinery.smart_pages.admin') %></span>
+        <span style='display:none;'><%= t('cancel', :scope => 'refinery.admin.form_actions') %></span>
+      <% end %>
     </li>
-  <% end %>
+  </ul>
+  <ul id='other_locales' style='display: none'>
+    <% Refinery::Pages.types.each do |type| %>
+      <li>
+        <%= link_to t("#{type.name.to_s}", :scope => 'refinery.smart_pages.admin.templates') + " " + t('template', :scope => 'refinery.smart_pages.admin'), refinery.new_admin_page_path + "?view_template=" + type.name.to_s, :class => 'add_icon' %>
+      </li>
+    <% end %>
+  </ul>
 
 <% if @pages.many? and !searching? %>
   <li>
