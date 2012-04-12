@@ -1,10 +1,13 @@
-# Smart Pages extension for Refinery CMS.
+# Smart Pages extension for Refinery CMS
 
-## How to build this extension as a gem
+## Requirements
+Refinery CMS version 2.1.0.dev or above.
 
-    cd vendor/extensions/smart_pages
-    gem build refinerycms-smart_pages.gemspec
-    gem install refinerycms-smart_pages.gem
+## Install
+Open up your Gemfile and add at the bottom this line:
 
-    # Sign up for a http://rubygems.org/ account and publish the gem
-    gem push refinerycms-smart_pages.gem
+```ruby
+gem 'refinerycms-smart_pages', :git => 'https://SmartDeployer:PASSWORD@github.com/SmartMedia/refinerycms-smart_pages.git'
+```
+
+Now, run ``bundle install``
